@@ -28,9 +28,8 @@ int main(){
     inserta_inicio(lcontenido, 3);
     inserta_inicio(lcontenido, 12);
     inserta_inicio(lcontenido, 7);
-
-    //imprime_lista(lcontenido);
-
+    
+    
     indice =3;
 
     construir_lista(lcontenido, lvacia1, lvacia2, indice);

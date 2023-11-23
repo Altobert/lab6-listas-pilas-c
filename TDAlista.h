@@ -42,14 +42,17 @@ void imprime_lista(lista *l);
 void libera_lista(lista *l);
 
 /*------------- actividad 2 -------------*/
+//cuenta la cantiada de elementos en una lista
 int cuenta_nodos(lista *l);
 
 
 /*------------- actividad 3 -------------*/
+//Busca un dato dentro de una lista
 int busca_dato(lista *l, int d);
 
 
 /*------------- actividad 4 -------------*/
-//a partir de una lista con numeros, construr dos listas
-//una con los menores y otra lista con los mayores
+//A partir de una lista con numeros, construr dos listas;
+//a) Una con los menores 
+//b) Y otra lista con los mayores
 void construir_lista(lista *lContenido, lista *vacia1, lista *vacia2, int indice);

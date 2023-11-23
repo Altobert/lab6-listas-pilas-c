@@ -79,34 +79,36 @@ int busca_dato(lista *l, int d){
       if(!es_lista_vacia(l)){
       	 nodo *ptr = l->inicio;
       	 while(ptr != NULL){
-	   	if(ptr->dato == d){
-	   	   return 1; 
-	   	}else{
-	   	    ptr= ptr->siguiente;
-	   	}
-	   	
-	 }
+            if(ptr->dato == d){
+                return 1; 
+            }else{
+                ptr= ptr->siguiente;
+            }	   	
+	    }
       }
       return dato;
 }
 
 
-/**/
+/*------------- actividad 4 -------------*/
 void construir_lista(lista *lContenido,
      lista *vacia1, lista *vacia2, int posicion){
         
     int tamanoLista=0;
     int i = 0;
+
     imprime_lista(lContenido);	
-    if(!es_lista_vacia(lContenido)){
+
+    if(!es_lista_vacia(lContenido)){        
         nodo *ptr = lContenido->inicio;
-        while (ptr != NULL)
-        {
+        while (ptr != NULL){
+            
             if(i == posicion){
 
             }
             /* code */
             i = i + 1;
+            ptr= ptr->siguiente;
         }
         
     }
